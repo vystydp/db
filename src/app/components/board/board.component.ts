@@ -54,7 +54,7 @@ export class BoardComponent implements OnInit {
         reservedAt: new Date().toUTCString()
       });
     } else {
-      alert('Seat is not avaialble, its owned by ' + this.board[yAxis][xAxis].owner.getUserInfo());
+      alert('Seat is not available, its owned by ' + this.board[yAxis][xAxis].owner.getUserInfo());
     }
   }
 
