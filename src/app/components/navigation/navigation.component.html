@@ -1,0 +1,19 @@
+<div>
+  <button title="Click me please!!!" (click)="onUserReAssignClick($event)"
+          role="button"
+          aria-roledescription="Click me to change your identity" class="button">
+    <span>{{user.name}} {{user.surname}} #{{user.getId()}}</span>
+  </button>
+  <!-- @todo make it as component -->
+  <span class="info">
+    <- Try to click (many times) that <span class="green">green</span>
+    button to pseudo-randomly change your identity.
+  </span>
+  <ul role="navigation" aria-roledescription="main navigation">
+    <li><a routerLink="/board">Book your seat</a></li>
+    <li><a routerLink="/dashboard">Your seats</a></li>
+  </ul>
+
+</div>
+
+

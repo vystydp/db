@@ -1,0 +1,13 @@
+<div>
+
+  <p *ngIf="boardService.getSeatsByUserId().length == 0">There is no seats available</p>
+
+  <table id="seats" *ngIf="boardService.getSeatsByUserId().length != 0">
+    <thead><tr><th>Row number</th><th>Seat Number</th><th>Reserved</th></tr></thead>
+    <tr *ngFor="let seat of boardService.getSeatsByUserId()">
+      <td>{{seat.row + 1}}</td>
+      <td>{{seat.column + 1}}</td>
+      <td>{{seat.reservedAt}}</td>
+    </tr>
+  </table>
+</div>

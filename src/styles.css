@@ -1,0 +1,71 @@
+/** USE LES OR SCSS */
+
+ul {
+  list-style-type: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.green {
+  color: #4CAF50;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 3px;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.busy {
+  background: #FF0000;
+  cursor: not-allowed;
+}
+
+.owned {
+  background: #9fffa6;
+  cursor: not-allowed;
+}
+
+.row {
+  margin: 0px auto;
+}

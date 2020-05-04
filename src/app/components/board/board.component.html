@@ -1,0 +1,18 @@
+<div class="board">
+  <div *ngFor="let row of board | keyvalue; let i = index">
+
+    <div class="row">
+      <button
+        (click)="onSeatClick($event, i, j)"
+        class="cell"
+        [ngClass]="(column.isFree) ?
+          'free'
+          : column.owner && column.owner.id == boardService.getUser(false).getId() ? 'owned': 'busy'"
+        *ngFor="let column of row.value; let j = index">
+        {{j + 1}}
+      </button>
+      <span [ngStyle]="{fontSize: '0.7em'}">row {{i + 1}}</span>
+    </div>
+  </div>
+  <div class="svg" [innerHTML]="svg"></div>
+</div>
